@@ -1,0 +1,9 @@
+import requests
+
+# Make a GET request to the myself endpoint
+response = requests.get('https://yourserver.com/rest/api/2/myself', auth=('username', 'password'))
+
+# Get the account ID from the JSON response
+data = response.json()
+account_id = data['accountId']
+print("Account ID:", account_id)

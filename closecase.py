@@ -3,7 +3,7 @@ import schedule
 import time
 
 options = {'server': 'https://slingpower.atlassian.net/'}
-jira = JIRA(options, basic_auth=('slingpower@gmail.com', 'awqcg757MrtbZuragBiM52DB'))
+jira = JIRA(options, basic_auth=('slingpower@gmail.com', 'NbL8pGhAlfptBVFlirSBC0EF'))
 
 def close_issues():
     assigned_issues = jira.search_issues("assignee = 'slingpower@gmail.com'")
